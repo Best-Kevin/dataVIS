@@ -28,7 +28,7 @@
 
 </br></br>
 ### 体验地址
-[https://zhoukaiwen.com/proj/znlh_zb/index.html](https://zhoukaiwen.com/proj/znlh_zb/index.html?_blank)
+[https://zhoukaiwen.com/proj/znlh_zb/index.html](https://zhoukaiwen.com/proj/znlh_zb/index.html)
 
 ### 项目说明
 
