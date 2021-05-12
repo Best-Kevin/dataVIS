@@ -36,7 +36,6 @@
 > * 金融行业
 > * 智慧交通
 > * 大数据分析平台
-> * 还在持续更新中～
 
 </br></br>
 
@@ -55,9 +54,12 @@
 
 
 ### 部分截图
-<img src="https://cdn.zhoukaiwen.com/zjx_1.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_10.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_2.png" width="140" />
+<img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS1.png" width="240" />
+<img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS2.png" width="240" />
+<img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS3.png" width="240" />
+<img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS4.png" width="240" />
+<img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS5.png" width="240" />
+<img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS6.png" width="240" />
 
 
 
