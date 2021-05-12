@@ -1,0 +1,226 @@
+.display{
+	display: none !important;
+}
+.container{
+	width: 1920px;
+	height: 1080px;
+	background: #000000;
+	/* background: url(../img/bg.png) #000000; */
+}
+.top{
+	width: 100%;
+	height: 64px;
+	background: url(../img/top2.png) center 3px no-repeat;
+	position: relative;
+	padding: 0 3rem 0 3rem;
+	box-sizing: border-box;
+}
+/*顶部左侧tab*/
+.tab_box{
+	width: 32%;
+	height: 64px;
+	position: absolute;
+}
+.tab_box li{
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	width: 175px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 65px;
+	color: #FFFFFF;
+	font-size: 1.3rem;
+	padding: 0 1.25rem;
+	box-sizing: border-box;
+}
+.tab_box li.active{
+	background: linear-gradient(to bottom, #061625, #037C8D);
+	border-bottom: 6px solid #00F7FF;
+	border-radius: 0 0 6px 6px;
+}
+.tab_box li img{
+	width: 1.8rem;
+	height: 1.8rem;
+	margin-top: .9rem;
+	float: left;
+}
+
+/*中间Logo*/
+.top_center{
+	width: 100%;
+	height: 90px;
+	background: url(../img/top1.png) center no-repeat;
+	background-position-y: top;
+	text-align: center;
+	line-height: 4rem;
+	color: #FFFFFF;
+	font-size: 2.3rem;
+	float: left;
+}
+
+
+/*顶部右侧天气*/
+.weather{
+	width: 32%;
+	height: 64px;
+	position: absolute;
+	right: 0;
+}
+.weather li{
+    height: 64px;
+    margin-right: 3rem;
+    float: right;
+    text-align: center;
+    line-height: 64px;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+}
+
+/*角标*/
+.j_1{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	border-left: 3px solid #1ee4da;
+	border-top: 3px solid #1ee4da;
+}
+.j_2{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	border-right: 3px solid #1ee4da;
+	border-top: 3px solid #1ee4da;
+}
+.j_3{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	bottom: -2px;
+	left: -2px;
+	border-left: 3px solid #1ee4da;
+	border-bottom: 3px solid #1ee4da;
+}
+.j_4{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	border-right: 3px solid #1ee4da;
+	border-bottom: 3px solid #1ee4da;
+}
+
+
+
+/*角标2*/
+.j1_1{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	border-left: 2px solid #3680E4;
+	border-top: 2px solid #3680E4;
+}
+.j1_2{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	border-right: 2px solid #3680E4;
+	border-top: 2px solid #3680E4;
+}
+.j1_3{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	bottom: -2px;
+	left: -2px;
+	border-left: 2px solid #3680E4;
+	border-bottom: 2px solid #3680E4;
+}
+.j1_4{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	border-right: 2px solid #3680E4;
+	border-bottom: 2px solid #3680E4;
+}
+
+.title{
+	height: 40px;
+	color: #1FE8DF;
+	background-color: #011e24;
+	line-height: 40px;
+	text-indent: 1rem;
+	font-size: 1.1rem;
+}
+.title img{
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+/*设置特殊字体*/
+@font-face {
+    font-family: 'font01';/*这里填写字体名*/
+    src: url('../font/hooge05552.woff') format('woff');/*这里填写字体路径，我放在了和网页同一目录下的font文件夹内，字体文件名称为font.woff*/
+}
+.font{
+	padding: 0 0.3rem;
+	font-size: 1.9rem;
+	margin-left: 2px;
+}
+
+.font0{
+	font-size: 1.6rem;
+	margin-left: 2px;
+}
+
+/*颜色值*/
+.qianlan{
+	color: #47EBEA;
+}
+.shenlan{
+	color: #1E94FE;
+}
+.zise{
+	color: #B916DE;
+}
+.huangse{
+	color: #D4A031;
+}
+.huise{
+	color: #7CA1D3;
+}
+
+
+/*圆形*/
+.circular1{
+	width: .55rem;
+    height: .55rem;
+    border-radius: 100%;
+    background: #EB2243;
+    display: inline-block;
+}
+.circular2{
+	width: .55rem;
+    height: .55rem;
+    border-radius: 100%;
+    background: #FEFE00;
+    display: inline-block;
+}
+.circular3{
+	width: .55rem;
+    height: .55rem;
+    border-radius: 100%;
+    display: inline-block;
+}

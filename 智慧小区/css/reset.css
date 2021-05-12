@@ -1,0 +1,16 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,hr,table,caption,th,td,form,fieldset,legend,input,button,textarea{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img{border:0;}
+i,em{font-style:normal;}
+li{list-style:none;}
+textarea{overflow:auto;resize:none;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,a,a:hover{text-decoration:none;color:#333;}
+body,textarea,input,button,select,legend{font:12px/1.14 "微软雅黑",arial;color:#333;outline:0;}
+body{background:#fff;}
+
+.clearfix{zoom:1;}
+.clearfix:after{display:block;content:"";clear:both;height: 0;visibility: hidden;overflow: hidden;}

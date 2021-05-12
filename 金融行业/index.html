@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>智能量化大数据直播</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- iframe适应移动端 -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" /> -->
+
+		<!--css-->
+		<link rel="stylesheet" href="css/reset.css" media="all" />
+		<link rel="stylesheet" href="common/common.css" media="all" />
+		<link rel="stylesheet" href="css/index.css" media="all" />
+
+		<!--script-->
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		 <script src="https://cdn.bootcss.com/echarts/4.7.0/echarts.js"></script>
+		
+		<!-- Resources -->
+		<!-- <script src="https://www.amcharts.com/lib/4/charts.js"></script> -->
+		<!-- <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script> -->
+	</head>
+
+	<body>
+		<div class="container" id="log">
+			<!--顶部盒子-->
+			<div class="top">
+				<ul class="tab_box">
+					<li class="tab1 active">
+						<img src="img/logo.png" />
+						<div>智能量化</div>
+					</li>
+					<li class="tab2">注册登陆</li>
+					<li class="tab3">下载APP</li>
+				</ul>
+				<div class="top_center" id="js_full_screen">智能量化大数据直播</div>
+
+				<ul class="weather">
+					<li><span id="times_one"></span> <span>&nbsp;</span> <span id="weeks_one">周三</span></li>
+				</ul>
+			</div>
+			<!--第一页中间部分的盒子-->
+			<div class="main_box">
+				<div class="main_left">
+					<div class="left_top">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title">
+							<img src="img/page1/icon4.png" />
+							累计收益数据统计
+							<!-- <div style="float: right;">年</div>
+							<div style="float: right;">月</div>
+							<div style="float: right;">日</div> -->
+						</div>
+
+
+						<div class="data_num_box">
+
+							<div class="data_box1 active" style="margin: 0px 10px;">
+								<div class="data_title">累计收益/RMB</div>
+								<font class="font qianlan" face="font01" id="shouyi_rmb"></font>
+								
+								<div class="j1_box1">
+									<span class="j1_1"></span>
+									<span class="j1_2"></span>
+									<span class="j1_3"></span>
+									<span class="j1_4"></span>
+								</div>
+							</div>
+
+							<div class="data_box2 active" style="margin: 0px 10px;">
+								<div class="data_title">累计收益/USDT</div>
+								<font class="font shenlan" face="font01" id="shouyi_us"></font>
+								
+								<div class="j1_box2">
+									<span class="j1_1"></span>
+									<span class="j1_2"></span>
+									<span class="j1_3"></span>
+									<span class="j1_4"></span>
+								</div>
+							</div>
+						</div>
+
+						<div id="echarts_data1"></div>
+					</div>
+
+					<!-- 量化排行榜 -->
+					<div class="left_bottom">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon6.png" />量化排行榜</div>
+						<ul class="tab_pm">
+							<li class="tab_pm_1 active">今日</li>
+							<li class="tab_pm_2">本月</li>
+							<li class="tab_pm_3">所有</li>
+						</ul>
+						<div id="progress1_chart">
+							<ul class="paihangbang" id="phb_box">
+
+								<li>
+									<div class="phbNum">
+										<font class="font0" face="font01">1</font>
+									</div>
+									<!-- <img class="user_head" src="img/head.jpg"> -->
+									<div class="phbName_box">
+										<div class="phbName">天下第一量化</div>
+										<div class="phbNameData">今日 10000.00 | 总 22000.00</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- k线图 1 - btc -->
+				<div class="main_center">
+
+					<div class="center_top_box1">
+
+						<div class="center_left_top">
+							<span class="j_1"></span>
+							<span class="j_2"></span>
+							<span class="j_3"></span>
+							<span class="j_4"></span>
+							<div class="title"><img style="width: 24px; margin-top: 2px;" src="img/page1/icon7.png" />BTC-比特币</div>
+							<!-- k线图 - btc -->
+							<div class="kline_box" id="kline_btc" style="overflow: hidden;">
+								<!-- TradingView Widget BEGIN -->
+								<div class="tradingview-widget-container">
+								  <div id="tradingview_09c9f"></div>
+								  <div class="tradingview-widget-copyright"><a href="https://cn.tradingview.com/symbols/BINANCE-BTCUSDT/" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT图表</span></a>由TradingView提供</div>
+								  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+								  <script type="text/javascript">
+								  new TradingView.widget(
+								  {
+								  "width": 485,
+								  "height": 514,
+								  "symbol": "BINANCE:BTCUSDT",
+								  "interval": "D",
+								  "timezone": "Etc/UTC",
+								  "theme": "dark",
+								  "style": "1",
+								  "locale": "zh_CN",
+								  "toolbar_bg": "#f1f3f6",
+								  "enable_publishing": false,
+								  "withdateranges": true,
+								  "allow_symbol_change": true,
+								  "container_id": "tradingview_09c9f"
+								}
+								  );
+								  </script>
+								</div>
+								<!-- TradingView Widget END -->
+							</div>
+						</div>
+					</div>
+
+					<div class="center_top_box2">
+						<div class="center_left_top">
+							<span class="j_1"></span>
+							<span class="j_2"></span>
+							<span class="j_3"></span>
+							<span class="j_4"></span>
+							<div class="title"><img style="width: 24px; margin-top: 2px;" src="img/page1/icon8.png" />ETH-以太坊</div>
+							<!-- k线图 - ETH -->
+							<div class="kline_box" id="kline_btc" style="overflow: hidden;">
+								<!-- TradingView Widget BEGIN -->
+								<div class="tradingview-widget-container">
+								  <div id="tradingview_ae97f"></div>
+								  <div class="tradingview-widget-copyright"><a href="https://cn.tradingview.com/symbols/KRAKEN-ETHUSDT/" rel="noopener" target="_blank"><span class="blue-text">ETHUSDT图表</span></a>由TradingView提供</div>
+								  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+								  <script type="text/javascript">
+								  new TradingView.widget(
+								  {
+								  "width": 484,
+								  "height": 514,
+								  "symbol": "KRAKEN:ETHUSDT",
+								  "interval": "D",
+								  "timezone": "Etc/UTC",
+								  "theme": "dark",
+								  "style": "1",
+								  "locale": "zh_CN",
+								  "toolbar_bg": "#f1f3f6",
+								  "enable_publishing": false,
+								  "withdateranges": true,
+								  "allow_symbol_change": true,
+								  "container_id": "tradingview_ae97f"
+								}
+								  );
+								  </script>
+								</div>
+								<!-- TradingView Widget END -->
+							</div>
+						</div>
+					</div>
+
+					<div style="clear:both;"></div>
+
+					<!-- <div class="center_top_1">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon3.png" />实时数据归集</div>
+						<div>123123</div>
+						
+					</div> -->
+					<div class="center_bottom">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon2.png" />实时做单记录</div>
+						<div style="height: 23rem; overflow: hidden; background: black;">
+							<table style="color: #CCCCCC;">
+								<tr>
+									<th>交易时间</th>
+									<th>用户手机</th>
+									<th>利润</th>
+									<th>卖单均价</th>
+									<th>买单均价</th>
+									<th>币对</th>
+									<th>交易额</th>
+									<th>交易量</th>
+									<th>购买花费</th>
+								</tr>
+								
+								<tbody class="data_websocket">
+									<tr>
+										<td>05-23 12:08</td>
+										<td>13323232323</td>
+										<td>1323</td>
+										<td>1323.00</td>
+										<td>1323.00</td>
+										<td>123123</td>
+										<td>1323.00</td>
+										<td>1323.00</td>
+										<td>1323.00</td>
+										<td>1323.00</td>
+										<td>1323.00</td>
+									</tr>
+								</tbody>
+								
+								
+							</table>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="main_right">
+					<div class="right_top">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img style="width: 24px; margin-top: 2px;" src="img/logo.png" />智能量化APP</div>
+						<!-- <iframe src="http://share.xiaoding.co/h5/#/">
+
+						</iframe> -->
+						<iframe id="znlh" visibility:visible"" class="iframe_page"></iframe>
+					</div>
+				</div>
+			</div>
+
+
+			<!--第二页中间部分的盒子-->
+			<div class="main_box2 display">
+				<div class="center_box">
+					<span class="j_1"></span>
+					<span class="j_2"></span>
+					<span class="j_3"></span>
+					<span class="j_4"></span>
+
+					<iframe src="http://xiaoding.co/register/"></iframe>
+
+				</div>
+			</div>
+			
+			
+			<!--第三页中间部分的盒子-->
+			<div class="main_box3 display">
+				<div class="center_box">
+					<span class="j_1"></span>
+					<span class="j_2"></span>
+					<span class="j_3"></span>
+					<span class="j_4"></span>
+					<iframe src="http://xiaoding.co/"></iframe>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/index.js"></script>
+
+<style>
+	/* 排行榜 */
+	.paihangbang {
+		width: 100%;
+		height: 33.6rem;
+		overflow: hidden;
+	}
+
+	.paihangbang li {
+		width: 100%;
+		height: 66.3px;
+		border-bottom: 1px solid rgba(0, 0, 0, .2);
+		color: #47EBEA;
+	}
+
+	.phbNum {
+		width: 3.5rem;
+		height: 100%;
+		line-height: 66.3px;
+		text-align: center;
+		font-size: 1.3rem;
+		float: left;
+	}
+
+	.user_head {
+		width: 3rem;
+		height: 3rem;
+		margin-top: .5rem;
+		border-radius: 6.25rem;
+		float: left;
+		margin-right: 1.3625rem;
+	}
+
+	.phbName_box {
+		height: 66.3px;
+		float: left;
+	}
+
+	.phbName_box div {
+		height: 33.15px;
+	}
+
+	.phbName {
+		color: #FFFFFF;
+		font-size: 1.25rem;
+		line-height: 40px;
+	}
+
+	.phbNameData {
+		color: #9ed5e1;
+		line-height: 28px;
+		font-weight: 600;
+	}
+</style>

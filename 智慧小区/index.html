@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>曲江新区平安大数据</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+
+		<!--css-->
+		<link rel="stylesheet" href="css/reset.css" media="all" />
+		<link rel="stylesheet" href="common/common.css" media="all" />
+		<link rel="stylesheet" href="css/index.css" media="all" />
+
+		<!--script-->
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="https://cdn.bootcss.com/echarts/4.2.1/echarts.js"></script>
+
+		<!-- Resources -->
+		<script src="https://www.amcharts.com/lib/4/core.js"></script>
+		<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+		<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<!--顶部盒子-->
+			<div class="top">
+				<ul class="tab_box">
+					<li class="tab1 active">平安大数据</li>
+					<li class="tab2">社区沙盘</li>
+					<li class="tab3">平安态势</li>
+				</ul>
+				<div class="top_center">曲江新区平安大数据</div>
+				<ul class="weather">
+					<li>2018-05-19<span>&nbsp;</span><span>11:00</span></li>
+					<li><span><img src="img/icon_weather/0.png">&nbsp;</span>多云</li>
+					<li>27度</li>
+					<li>微风三级</li>
+					<li>AQI&nbsp;<span>良</span></li>
+				</ul>
+			</div>
+			<!--第一页中间部分的盒子-->
+			<div class="main_box">
+				<div class="main_left">
+					<div class="left_top">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon4.png" />数据归集统计</div>
+						<div class="data_num_box">
+							<div class="data_box1 active">
+								<div class="data_title">总数据量</div>
+								<font class="font qianlan" face="font01">657.5K</font>
+								<span>条</span>
+								<div class="j1_box1">
+									<span class="j1_1"></span>
+									<span class="j1_2"></span>
+									<span class="j1_3"></span>
+									<span class="j1_4"></span>
+								</div>
+							</div>
+							<div class="data_box2">
+								<div class="data_title">今日数据量</div>
+								<font class="font shenlan" face="font01">0.87K</font>
+								<span>条</span>
+								<div class="j1_box2 display">
+									<span class="j1_1"></span>
+									<span class="j1_2"></span>
+									<span class="j1_3"></span>
+									<span class="j1_4"></span>
+								</div>
+							</div>
+						</div>
+
+						<div id="echarts_data1"></div>
+					</div>
+
+					<div class="left_bottom">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon6.png" />字段数据量排名</div>
+						<ul class="tab_pm">
+							<li class="active">总量</li>
+							<li>当日</li>
+							<li>近30天</li>
+						</ul>
+						<div id="progress1_chart"></div>
+					</div>
+				</div>
+
+				<div class="main_center">
+					<div class="center_top">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon3.png" />实时数据归集</div>
+						<div id="center_map">
+							<ul>
+								<span class="open qianlan">开</span>
+								<li class="tiao">
+									<span class="open_btn"></span>
+									<span class="off_btn"></span>
+								</li>
+								<span class="off qianlan">关</span>
+							</ul>
+						</div>
+					</div>
+					<div class="center_bottom">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon2.png" />社区数据接入</div>
+						<div class="sq_data">
+							<div class="sq_left">
+								<div class="sq_left_t">
+									<div class="data_box" style="text-align: center;">
+										<font class="font3 qianlan" face="font01">3252</font><span>个</span>
+										<div class="data_title2">社区总数量</div>
+									</div>
+								</div>
+								<span class="line"></span>
+								<div class="sq_left_b">
+									<div class="data_box" style="text-align: center;">
+										<font class="font3 huangse" face="font01">1521</font><span>个</span>
+										<div class="data_title2">已接入社区数量</div>
+									</div>
+								</div>
+							</div>
+							<div id="sq_right">	
+								<!--echarts-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="main_right">
+					<div class="right_top">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon5.png" />数据建模</div>
+						<div class="data_sjjm">
+							<div class="data_box2">
+								<div class="data_title">基础库</div>
+								<font class="font qianlan" face="font01">451</font>
+								<span>个</span>
+							</div>
+							<div class="data_box2">
+								<div class="data_title">主题库</div>
+								<font class="font shenlan" face="font01">876</font>
+								<span>个</span>
+							</div>
+							<div class="data_box2">
+								<div class="data_title">专题库</div>
+								<font class="font zise" face="font01">678</font>
+								<span>个</span>
+							</div>
+						</div>
+					</div>
+					<div class="right_bottom">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page1/icon1.png" />热门库</div>
+						<div class="qiuqiu">
+							<img src="img/page1/qiuqiu.png" />
+						</div>
+						<div id="jindu2">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--第二页中间部分的盒子-->
+			<div class="main_box2 display">
+				<div class="top_box">
+					<div class="top_box_left">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page2/icon1.png" />社区实时数据</div>
+						<div class="community">
+							<ul class="b_s">
+								<li>+</li>
+								<li>-</li>
+							</ul>
+						</div>
+					</div>
+					<div class="top_box_center">
+						<div class="p2_cT">
+							<span class="j_1"></span>
+							<span class="j_2"></span>
+							<span class="j_3"></span>
+							<span class="j_4"></span>
+							<div class="title"><img src="img/page2/icon2.png" />社区实时数据</div>
+							<ul class="p2_cT_box">
+								<li>
+									<div class="p2_cT_title">当前人数</div>
+									<span class="block block1">
+										<font class="font2 huise" face="font01">0</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">0</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">5</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">3</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">1</font>
+									</span>
+									<span class="ren">人</span>
+								</li>
+								<li>
+									<div class="p2_cT_title">访客人数</div>
+									<span class="block block1">
+										<font class="font2 huise" face="font01">0</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">0</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">4</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">4</font>
+									</span>
+									<span class="block">
+										<font class="font2 huise" face="font01">1</font>
+									</span>
+									<span class="ren">人</span>
+								</li>
+								<li>
+									<div class="p2_cT_title">需关注人数</div>
+									<span class="block block1 block_o">
+										<font class="font2 huangse" face="font01">0</font>
+									</span>
+									<span class="block block_o">
+										<font class="font2 huangse" face="font01">0</font>
+									</span>
+									<span class="block block_o">
+										<font class="font2 huangse" face="font01">0</font>
+									</span>
+									<span class="block block_o">
+										<font class="font2 huangse" face="font01">6</font>
+									</span>
+									<span class="block block_o">
+										<font class="font2 huangse" face="font01">5</font>
+									</span>
+									<span class="ren">人</span>
+								</li>
+							</ul>
+						</div>
+						<div class="p2_cB">
+							<span class="j_1"></span>
+							<span class="j_2"></span>
+							<span class="j_3"></span>
+							<span class="j_4"></span>
+							<div class="title"><img src="img/page2/icon4.png" />房屋概览</div>
+
+							<div id="Cake"></div>
+							<ul class="home_data">
+								<li class="home_data_one">
+									<div class="home_data_num">
+										<font class="font1 shenlan" face="font01">456</font>
+										<span>户</span>
+									</div>
+									<div class="home_data_name">闲置</div>
+								</li>
+								<li class="home_data_two">
+									<div class="home_data_num">
+										<font class="font1 qianlan" face="font01">663</font>
+										<span>户</span>
+									</div>
+									<div class="home_data_name">出租</div>
+								</li>
+								<li class="home_data_three">
+									<div class="home_data_num">
+										<font class="font1 zise" face="font01">862</font>
+										<span>户</span>
+									</div>
+									<div class="home_data_name">自住</div>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="top_box_right">
+						<div class="p2_rT">
+							<span class="j_1"></span>
+							<span class="j_2"></span>
+							<span class="j_3"></span>
+							<span class="j_4"></span>
+							<div class="title"><img src="img/page2/icon3.png" />社区概览</div>
+							<div class="data_sqgl">
+								<div class="data_box">
+									<font class="font shenlan" face="font01">10025</font><span>人</span>
+									<div class="data_title2">社区实有人口</div>
+								</div>
+								<div class="data_box">
+									<font class="font zise" face="font01">8962</font><span>个</span>
+									<div class="data_title2">户籍人口总数</div>
+								</div>
+							</div>
+							<span class="line"></span>
+							<div class="data_sqgl">
+								<div class="data_box">
+									<font class="font qianlan" face="font01">10025</font><span>人</span>
+									<div class="data_title2">暂住证未办理人数</div>
+								</div>
+								<div class="data_box">
+									<font class="font huangse" face="font01">8962</font><span>个</span>
+									<div class="data_title2">持有暂住证人数</div>
+								</div>
+							</div>
+
+							<ul class="shequ_charts">
+								<li id="chartsdiv1"></li>
+								<li id="chartsdiv2"></li>
+							</ul>
+							<ul class="home_data2">
+								<li class="home_data_one">
+									<div class="home_data_num">
+										<font class="font1 shenlan" face="font01">456</font>
+										<span>户</span>
+									</div>
+									<div class="home_data_name">流动人口</div>
+								</li>
+							</ul>
+							<ul class="home_data2">
+								<li class="home_data_two">
+									<div class="home_data_num">
+										<font class="font1 qianlan" face="font01">456</font>
+										<span>户</span>
+									</div>
+									<div class="home_data_name">特殊人群</div>
+								</li>
+							</ul>
+						</div>
+						<div class="p2_rB">
+							<span class="j_1"></span>
+							<span class="j_2"></span>
+							<span class="j_3"></span>
+							<span class="j_4"></span>
+							<div class="title"><img src="img/page2/icon5.png" />车位概览</div>
+							<div class="data_cwgl">
+								<div class="data_box">
+									<font class="font zise" face="font01">14</font><span>个</span>
+									<div class="data_title2">特殊车辆</div>
+								</div>
+								<div class="data_box">
+									<font class="font qianlan" face="font01">120</font><span>个</span>
+									<div class="data_title2">在场车辆数</div>
+								</div>
+								<div class="data_box">
+									<font class="font shenlan" face="font01">314</font><span>个</span>
+									<div class="data_title2">总车位数</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom_box">
+					<div class="bottom_left">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page2/icon6.png" />人员通行记录</div>
+						<ul class="list">
+							<li>
+								<span class="circular3"></span>
+								<span class="time">
+									〔10:23〕
+								</span>
+								<span class="qianlan">【业主】</span>
+								<span>张发江进入1号楼2单元</span>
+							</li>
+							<li>
+								<span class="circular1"></span>
+								<span class="time">
+									〔12:08〕
+								</span>
+								<span class="qianlan">【特殊人员】</span>
+								<span>李晓武进入3号楼6单元</span>
+							</li>
+							<li>
+								<span class="circular3"></span>
+								<span class="time">
+									〔16:36〕
+								</span>
+								<span class="qianlan">【租客】</span>
+								<span>李星进入13号楼2单元</span>
+							</li>
+							<li>
+								<span class="circular2"></span>
+								<span class="time">
+									〔13:08〕
+								</span>
+								<span class="qianlan">【访客】</span>
+								<span>吴晓进入6号楼3单元</span>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom_center">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page2/icon7.png" />事件记录</div>
+						<ul class="list">
+							<li>
+								<span class="circular2"></span>
+								<span class="time">
+									〔2019-05-23 12:08〕
+								</span>
+								<span>5号楼门口垃圾桶满了，请物业处理</span>
+								<span class="handle huangse">【未处理】</span>
+							</li>
+							<li>
+								<span class="circular3"></span>
+								<span class="time">
+									〔2019-05-23 12:08〕
+								</span>
+								<span>1号楼2单元门口出现打架事件</span>
+								<span class="handle qianlan">【已处理】</span>
+							</li>
+							<li>
+								<span class="circular2"></span>
+								<span class="time">
+									〔2019-05-23 12:08〕
+								</span>
+								<span>3号楼门口有抛洒物，请物业处理</span>
+								<span class="handle huangse">【未处理】</span>
+							</li>
+							<li>
+								<span class="circular3"></span>
+								<span class="time">
+									〔2019-05-23 12:08〕
+								</span>
+								<span>小区西门大门口出现小摊贩</span>
+								<span class="handle qianlan">【已处理】</span>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom_right">
+						<span class="j_1"></span>
+						<span class="j_2"></span>
+						<span class="j_3"></span>
+						<span class="j_4"></span>
+						<div class="title"><img src="img/page2/icon8.png" />车辆通行记录</div>
+						<ul class="list">
+							<li>
+								<span class="circular1"></span>
+								<span class="time">
+									〔12:08〕
+								</span>
+								<span class="qianlan">【访客】</span>
+								<span>赵鹤 陕A·23652 从东门驶入小区</span>
+							</li>
+							<li>
+								<span class="circular3"></span>
+								<span class="time">
+									〔12:08〕
+								</span>
+								<span class="qianlan">【业主】</span>
+								<span>李晓丽 川A·23552 从西门驶出小区</span>
+							</li>
+							<li>
+								<span class="circular2"></span>
+								<span class="time">
+									〔12:08〕
+								</span>
+								<span class="qianlan">【访客】</span>
+								<span>李武 陕A·568A2 从西门驶入小区</span>
+							</li>
+							<li>
+								<span class="circular3"></span>
+								<span class="time">
+									〔12:08〕
+								</span>
+								<span class="qianlan">【业主】</span>
+								<span>温蕊莉 陕A·5S56B 从东门驶入小区</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

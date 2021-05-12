@@ -1,37 +1,75 @@
-# 大数据可视化电子沙盘
+<p align="center">
+    <img width="200" src="https://cdn.zhoukaiwen.com/logo.png">
+</p>
 
-#### 介绍
-大数据可视化电子沙盘集合，包含多种样式：金融行业、智慧社区、智慧物业等，使用html/css/js实现，替换数据即可使用，开源
+<p align="center">
+	<a href="https://gitee.com/kevin_chou/dataVIS/stargazers" target="_blank">
+		<img src="https://svg.hamm.cn/gitee.svg?type=star&user=kevin_chou&project=dataVIS"/>
+	</a>
+	<a href="https://gitee.com/kevin_chou/dataVIS/members" target="_blank">
+		<img src="https://svg.hamm.cn/gitee.svg?type=fork&user=kevin_chou&project=dataVIS"/>
+	</a>
+	<img src="https://svg.hamm.cn/badge.svg?key=Platform&value=Pc端"/>
+</p>
 
-#### 软件架构
-软件架构说明
+<h1 align="center">大数据可视化电子沙盘</h1>
 
-
-#### 安装教程
-
-1.  xx
-2.  xx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+<div align="center">
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+<p>使用HTML、CSS、JavaScript，实现的可视化大数据电子沙盘</p>
+
+```
+如果觉得对你有用，随手点个 🌟 Star 🌟 支持下，这样才有持续下去的动力，谢谢！～
+```
+
+</div>
+
+</br></br>
+
+### 项目说明
+
+1.  项目基于html/css/js，包含行业：智慧政务、智慧社区、金融行业... 还在持续更新中～
+2.  项目包含功能 (部分)：
+> * 实时数据K线图（可自由配置多种行业模式）
+> * 可切换式大屏展示
+> * 翻牌效果
+> * 自定义字体
+> * 更多功能还在更新中...
+
+> 
+3.  分享模版是为了大家做相关需求时方便查阅参考～
+4.  其他页面还在补充中，开源项目中接口均已删除～
+5.  开源目的就是为了方便同行的小伙伴，还请各位多多Star支持～ 
+6.  本人自知技术还处于底层，还是有很多需要跟大家学习的地方！
+
+
+### 部分截图
+<img src="https://cdn.zhoukaiwen.com/zjx_1.png" width="140" />
+<img src="https://cdn.zhoukaiwen.com/zjx_10.png" width="140" />
+<img src="https://cdn.zhoukaiwen.com/zjx_2.png" width="140" />
+
+
+
+### 项目信息
+
+1.  作者：周凯文 (Kevin)
+2.  邮箱：280224091@qq.com
+3.  微信：280224091
+
+
+
+### 其他说明
+> *  作者 首页 [www.zhoukaiwen.com](https://www.zhoukaiwen.com)（维护中...）
+> *  项目功能需协助，请联系作者微信：280224091
+
+
+
+### 赞助作者
+> *  打赏就duck不必啦～ 就点点🌟 Star 🌟 关注更新，支持下作者就可以了
+<!-- <img src="https://cdn.zhoukaiwen.com/fk_zfb.jpeg" width="200"/>
+<img src="https://cdn.zhoukaiwen.com/fk_wx.jpeg" width="200" /> -->
+
+
+### 如果有项目需求、有设计，可以联系我～
