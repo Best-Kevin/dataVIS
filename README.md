@@ -56,7 +56,6 @@
 ### 部分截图
 <img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS1.png" width="100%" />
 <img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS2.png" width="100%" />
-<img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS3.png" width="100%" />
 <img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS4.png" width="100%" />
 <img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS5.png" width="100%" />
 <img src="https://zhoukaiwen.com/proj/dataVIS/previewImg/dataVIS6.png" width="100%" />
