@@ -35,6 +35,7 @@
 ### 体验地址（请全屏查看）：
 > *  智慧社区：[https://zhoukaiwen.com/proj/dataVIS/community](https://zhoukaiwen.com/proj/dataVIS/community/index.html)
 > *  金融行业：[https://zhoukaiwen.com/proj/dataVIS/finance](https://zhoukaiwen.com/proj/dataVIS/finance/index.html)
+> *  金融行业：[https://zhoukaiwen.com/proj/dataVIS/finance](https://zhoukaiwen.com/proj/dataVIS/finance/index.html)
 
 ### 项目说明
 
@@ -43,6 +44,7 @@
 > * 智慧社区
 > * 金融行业
 > * 智慧交通
+> * 智慧门店
 > * 大数据分析平台
 
 </br></br>
@@ -65,6 +67,7 @@
 <img src="https://cdn.zhoukaiwen.com/dataVIS3.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS1.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS2.jpeg" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/dataVIS6.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS4.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS5.jpeg" width="100%" />
 
