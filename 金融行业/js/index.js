@@ -128,67 +128,63 @@ $(document).ready(function() {
 	}
 	setTimeout(test, 500);
 
-	var websocket = null;
-	if('WebSocket' in window) {
-		console.log('浏览器支持WebSocket')
-		websocket = new WebSocket('ws://47.75.11.151:8888/ws');
-	} else {
-		alert('该浏览器不支持');
-	};
-	websocket.onopen = function(event) {
-		console.log('链接开始')
-	}
-	websocket.onclose = function(event) {
-		console.log('链接关闭')
-	}
+	// var websocket = null;
+	// if('WebSocket' in window) {
+	// 	console.log('浏览器支持WebSocket')
+	// 	websocket = new WebSocket('ws://47.75.11.151:8888/ws');
+	// } else {
+	// 	alert('该浏览器不支持');
+	// };
+	// websocket.onopen = function(event) {
+	// 	console.log('链接开始')
+	// }
+	// websocket.onclose = function(event) {
+	// 	console.log('链接关闭')
+	// }
 
-	websocket.onmessage = function(event) {
-		var result = $.parseJSON(event.data);
-		console.log(result)
-		console.log('----------消息来了----------:');
-		
-		
-		
-		if(result.data != ''){
-			var phone_m = result.data.Phone.substring(0,3)+"****"+ result.data.Phone.substring(8,11);
-			console.log(phone_m);
-			$(".data_websocket").prepend('<tr> <td>'+ result.data.CreatedAt.substring(5) +'</td> <td>'+ phone_m +'</td> <td>'+ result.data.Profit+'</td> <td>'+ result.data.BuyPrice +'</td> <td>'+ result.data.OrderPrice +'</td> <td>'+ result.data.Symbol +'</td> <td>'+ result.data.CashAmount +'</td> <td>'+ result.data.Amount +'</td> <td>'+ result.data.BuyCashAmount +'</td></tr>');
-		}else{
-			// var result = $.parseJSON(event.data);
-			var $phb_box = $('.data_websocket');
-			$phb_box.children().remove();
-			var fileList = '';
-			$.each(result.firstData, function(i, items) {
-				var phone_m = items.Phone.substring(0,3)+"****"+ items.Phone.substring(8,11);
-				console.log(phone_m);
+	// websocket.onmessage = function(event) {
+	// 	var result = $.parseJSON(event.data);
+	// 	console.log(result)
+	// 	console.log('----------消息来了----------:');
+	// 	if(result.data != ''){
+	// 		var phone_m = result.data.Phone.substring(0,3)+"****"+ result.data.Phone.substring(8,11);
+	// 		console.log(phone_m);
+	// 		$(".data_websocket").prepend('<tr> <td>'+ result.data.CreatedAt.substring(5) +'</td> <td>'+ phone_m +'</td> <td>'+ result.data.Profit+'</td> <td>'+ result.data.BuyPrice +'</td> <td>'+ result.data.OrderPrice +'</td> <td>'+ result.data.Symbol +'</td> <td>'+ result.data.CashAmount +'</td> <td>'+ result.data.Amount +'</td> <td>'+ result.data.BuyCashAmount +'</td></tr>');
+	// 	}else{
+	// 		// var result = $.parseJSON(event.data);
+	// 		var $phb_box = $('.data_websocket');
+	// 		$phb_box.children().remove();
+	// 		var fileList = '';
+	// 		$.each(result.firstData, function(i, items) {
+	// 			var phone_m = items.Phone.substring(0,3)+"****"+ items.Phone.substring(8,11);
+	// 			console.log(phone_m);
 				
-				var ii = i + 1;
-				if (i > -1) {
-					fileList += 
-						'<tr>' +
-							'<td>'+ items.CreatedAt.substring(5) +'</td>' +
-							'<td>'+ phone_m +'</td>' +
-							'<td>'+ items.Profit +'</td>' +
-							'<td>'+ items.BuyPrice +'</td>' +
-							'<td>'+ items.OrderPrice +'</td>' +
-							'<td>'+ items.Symbol +'</td>' +
-							'<td>'+ items.CashAmount +'</td>' +
-							'<td>'+ items.Amount +'</td>' +
-							'<td>'+ items.CashAmount +'</td>' +
-						'</tr>'
-				};
-			});
-			$phb_box.html(fileList);
-		}
-		console.log($.parseJSON(event.data))
-		
-	};
-	websocket.onerror = function(event) {
-		console.log('发生错误')
-	}
-	window.onbeforeunload = function() {
-		websocket.onclose;
-	}
+	// 			var ii = i + 1;
+	// 			if (i > -1) {
+	// 				fileList += 
+	// 					'<tr>' +
+	// 						'<td>'+ items.CreatedAt.substring(5) +'</td>' +
+	// 						'<td>'+ phone_m +'</td>' +
+	// 						'<td>'+ items.Profit +'</td>' +
+	// 						'<td>'+ items.BuyPrice +'</td>' +
+	// 						'<td>'+ items.OrderPrice +'</td>' +
+	// 						'<td>'+ items.Symbol +'</td>' +
+	// 						'<td>'+ items.CashAmount +'</td>' +
+	// 						'<td>'+ items.Amount +'</td>' +
+	// 						'<td>'+ items.CashAmount +'</td>' +
+	// 					'</tr>'
+	// 			};
+	// 		});
+	// 		$phb_box.html(fileList);
+	// 	}
+	// 	console.log($.parseJSON(event.data))
+	// };
+	// websocket.onerror = function(event) {
+	// 	console.log('发生错误')
+	// }
+	// window.onbeforeunload = function() {
+	// 	websocket.onclose;
+	// }
 	
 	
 	
@@ -219,7 +215,7 @@ $(document).ready(function() {
 			}
 		});
 	};
-	coinhisrank();
+	// coinhisrank();
 
 	// 顶部导航切换
 	$('.tab_box li').click(function() {
@@ -271,7 +267,7 @@ $(document).ready(function() {
 			xAxis: {
 				type: 'category',
 				boundaryGap: false,
-				data: xData,
+				data: '1,2,3,4,5,6',
 				axisLabel: {
 					interval: 1
 				},
@@ -325,7 +321,7 @@ $(document).ready(function() {
 				name: '当日收益',
 				type: 'line',
 				smooth: true,
-				data: [320, 590, 680, 790, 920, 820, 920],
+				data: [320, 590, 680, 310, 920, 820, 920,1100,937,1100,937],
 				symbol: 'none',
 				areaStyle: {
 					color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -341,54 +337,56 @@ $(document).ready(function() {
 				}
 			}]
 		});
+		
+		myChart1.setOption();
 	
-		var xData = '';
-		var data_end = [];
-		var data_end2 = [];
+		// var xData = '';
+		// var data_end = [];
+		// var data_end2 = [];
 		
 		
-		var yData = '';
-		var yData_end = [];
-		var yData_end2 = [];
+		// var yData = '';
+		// var yData_end = [];
+		// var yData_end2 = [];
 		
-		$.ajax({
-			type: "get",
-			dataType: "json",
-			async: false,
-			contentType: "Accept-Language:zh-cn",
-			url: "http://xiaoding.co/api/globalincome",
-			data: {},
-			success: function(data, status) {
-				console.log(data);
-				// console.log(res);
+		// $.ajax({
+		// 	type: "get",
+		// 	dataType: "json",
+		// 	async: false,
+		// 	contentType: "Accept-Language:zh-cn",
+		// 	url: "http://xiaoding.co/api/globalincome",
+		// 	data: {},
+		// 	success: function(data, status) {
+		// 		console.log(data);
+		// 		// console.log(res);
 				
-				$.each(data, function(i, items) {
-					xData += items.created_at.substring(5,10) + ',';
-					data_end = xData.split(",");
-					data_end2 = data_end.slice(0,-1);
+		// 		$.each(data, function(i, items) {
+		// 			xData += items.created_at.substring(5,10) + ',';
+		// 			data_end = xData.split(",");
+		// 			data_end2 = data_end.slice(0,-1);
 					
 					
-					yData += items.income + ',';
-					yData_end = yData.split(",");
-					yData_end2 = yData_end.slice(0,-1)
-				});
+		// 			yData += items.income + ',';
+		// 			yData_end = yData.split(",");
+		// 			yData_end2 = yData_end.slice(0,-1)
+		// 		});
 				
-				// console.log(yData_end2)
+		// 		// console.log(yData_end2)
 				
 				
-				myChart1.setOption({
-					xAxis:{
-						data: data_end2
-					},
-					series:[{
-						data: yData_end2
-					}]
-				});
-			},
-			error: function(jqXHR2) {
-				console.log(jqXHR2)
-			}
-		});
+		// 		myChart1.setOption({
+		// 			xAxis:{
+		// 				data: data_end2
+		// 			},
+		// 			series:[{
+		// 				data: yData_end2
+		// 			}]
+		// 		});
+		// 	},
+		// 	error: function(jqXHR2) {
+		// 		console.log(jqXHR2)
+		// 	}
+		// });
 		// console.log(xData);
 	
 	};
@@ -435,7 +433,7 @@ $(document).ready(function() {
 			}
 		});
 	}
-	phb();
+	// phb();
 
 	// 排行榜切换加载
 	$('.tab_pm li').click(function() {

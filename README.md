@@ -32,7 +32,7 @@
 </div>
 
 </br></br>
-### 体验地址
+### 体验地址（请全屏查看）：
 [https://zhoukaiwen.com/proj/znlh_zb/index.html](https://zhoukaiwen.com/proj/znlh_zb/index.html)
 
 ### 项目说明
@@ -61,9 +61,9 @@
 
 
 ### 部分截图
+<img src="https://cdn.zhoukaiwen.com/dataVIS3.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS1.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS2.jpeg" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/dataVIS3.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS4.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS5.jpeg" width="100%" />
 
