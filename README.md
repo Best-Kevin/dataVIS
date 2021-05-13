@@ -33,7 +33,7 @@
 
 </br></br>
 ### 体验地址（请全屏查看）：
-> *  智慧社区：[https://zhoukaiwen.com/proj/dataVIS/community/index.html](https://zhoukaiwen.com/proj/dataVIS/community/index.html)
+> *  智慧社区：[https://zhoukaiwen.com/proj/dataVIS/community](https://zhoukaiwen.com/proj/dataVIS/community/index.html)
 > *  金融行业：[https://zhoukaiwen.com/proj/dataVIS/finance/index.html](https://zhoukaiwen.com/proj/dataVIS/finance/index.html)
 
 ### 项目说明
