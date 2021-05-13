@@ -45,6 +45,7 @@
 > * 金融行业
 > * 智慧交通
 > * 智慧门店
+> * 智慧物流
 > * 大数据分析平台
 
 </br></br>
@@ -68,8 +69,10 @@
 <img src="https://cdn.zhoukaiwen.com/dataVIS1.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS2.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS6.png" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/dataVIS7.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS4.jpeg" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/dataVIS5.jpeg" width="100%" />
+
 
 
 
