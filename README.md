@@ -65,13 +65,14 @@
 
 
 ### 部分截图
-<img src="https://cdn.zhoukaiwen.com/dataVIS3.png" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/dataVIS1.jpeg" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/dataVIS2.jpeg" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/dataVIS6.png" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/dataVIS7.png" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/dataVIS4.jpeg" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/dataVIS5.jpeg" width="100%" />
+<img src="./capture/dataVIS3.png" width="100%" />
+<img src="./capture/dataVIS1.jpeg" width="100%" />
+<img src="./capture/dataVIS2.jpeg" width="100%" />
+<img src="./capture/dataVIS6.png" width="100%" />
+<img src="./capture/dataVIS7.png" width="100%" />
+<img src="./capture/dataVIS8.png" width="100%" />
+<img src="./capture/dataVIS4.jpeg" width="100%" />
+<img src="./capture/dataVIS5.jpeg" width="100%" />
 
 
 
