@@ -89,6 +89,12 @@
 3.  微信：280224091
 
 
+### 前后端技术交流群
+群聊人数已超过200人，加群微信添加：280224091（加备注信息：Gitee）
+<p>
+<img src="https://zhoukaiwen.com/img/wechat_ewmN.jpeg" width="300px" />
+</p>
+
 
 ### 其他说明
 > *  作者 首页 [www.zhoukaiwen.com](https://www.zhoukaiwen.com)（维护中...）
