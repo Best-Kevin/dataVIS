@@ -90,9 +90,10 @@
 
 
 ### 前后端技术交流群
-群聊人数已超过200人，加群微信添加：280224091（加备注信息：Gitee）
+群聊人数已超过200人，加群微信添加：280224091（请备注信息：Gitee）
 <p>
 <img src="https://zhoukaiwen.com/img/wechat_ewmN.jpeg" width="300px" />
+<img src="https://zhoukaiwen.com/img/kevinWechat.jpeg" width="300px" />
 </p>
 
 
